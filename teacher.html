@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teacher page</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style teacher.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+      <a class="navbar-brand" ><i class="fas fa-eye"></i>Odian Smart Attendance<strong></strong></a> </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="file:///F:/our%20web/our%20web/web%20page%20odin%20smart%20attendence/teacher.html#" class="page-scroll"><button type="button" class="btn btn-warning">Profile</button></a></li>
+        <li><a href="file:///F:/our%20web/our%20web/web%20page%20odin%20smart%20attendence/add%20info%20teacher.html#" class="page-scroll"><button type="button" class="btn btn-warning">Add Info</button></a></li>
+        <li><a href="#" class="page-scroll"><button type="button" class="btn btn-warning">Setting</button></a></li>
+        <li><a href="#" class="page-scroll"><button type="button" class="btn btn-warning">About</button></a></li>
+        <li><a href="#" class="page-scroll"><button type="button" class="btn btn-warning">log out</button></a></li>
+
+        <!-- Example single danger button -->
+        <!--<li><a href="#portfolioModal3" class="page-scroll"><button type="button" class="btn btn-warning" onclick="lloadDoc()" >Subjects</button></a></li>-->
+   <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle"  onclick="loadDoc()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <h5>subjects ▼</h5>
+      </button>
+        <div class="dropdown-menu" >
+
+        <a class="dropdown-item" href="#" onclick="subjectclick1()" id="option 1"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick2()" id="option 2"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick3()" id="option 3"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick4()" id="option 4"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick5()" id="option 5"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick6()" id="option 6"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick7()" id="option 7"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick8()" id="option 8"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick9()" id="option 9"></a>
+        <br>
+        <a class="dropdown-item" href="#" onclick="subjectclick10()" id="option 10"></a>
+        <br>
+        </div>
+
+
+
+
+    </div>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1 class="wow fadeInDown">welcome to  <strong><span class="color">Smart attendence project</span></strong></h1>
+    <p class="wow fadeInDown">let's track your progress</p>
+    <a href="#works-section" class="btn btn-default btn-lg page-scroll wow fadeInUp" data-wow-delay="200ms">Options</a> </div>
+</header>
+
+<!-- Portfolio Section -->
+<div id="works-section" class="text-center">
+  <div class="container"> <!-- Container -->
+    <div class="section-title wow fadeInDown">
+      <h2>Hello<strong></strong></h2>
+      <hr>
+      <div class="clearfix"></div>
+     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>-->
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <!--<li><a href="#" data-filter="*" class="active">All</a></li>-->
+            <li><a href="#" data-filter=".web">student's Attendance</a></li>
+            <li><a href="#" data-filter=".app">student's Degrees</a></li>
+            <li><a href="#" data-filter=".branding">Upload Files</a></li>
+            <li><a href="#" data-filter=".hell">Shared Files</a></li>
+            <li><a href="#" data-filter=".heaven">Specific Message </a></li>
+            <li><a href="#" data-filter=".hi">Broadcast Messages</a></li>
+            </nav>
+          </ol>
+        </li>
+      </ul>
+
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-4 web">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
+            <div class="hover-bg"> <a href="#portfolioModal1" onclick="sendattend()" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4> student's Attendance</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image1.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 app">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="hover-bg"> <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4>student's Degrees</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image2T.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 branding">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="600ms">
+            <div class="hover-bg"> <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4>Upload Files</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image3T.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 hell">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="800ms">
+            <div class="hover-bg"> <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4>Shared Files</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image 4T.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 hi">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="1200ms">
+            <div class="hover-bg"> <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4>Broadcast Messages</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image 5T.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-4 heaven">
+          <div class="portfolio-item wow fadeInUp" data-wow-delay="1400ms">
+            <div class="hover-bg"> <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text">
+                <h4>Specific Message</h4>
+
+                <div class="clearfix"></div>
+                <i class="fa fa-plus"></i> </div>
+              <img src="img/portfolio/image 6T.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+      <p>Copyright © ODIN. Design by <a href="#" rel="nofollow">Sohag Faculty Of Engineering</a></p>
+  </div>
+</div>
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+           <!-- <div id="attendance"></div>-->
+        <!-- <strong id="subattend" style="text-align:"></strong> -->
+          <h1 style="text-align: center" id="subattend"></h1>
+          <!--<p style="text-align:left" id="date" </p>-->
+<!--
+<table class="table">
+<thead>
+    <div class="col-lg-8 col-lg-offset-2">
+     <tr>
+      <th class="col-lg-2 col-lg-offset-2" id="subattend"></th>
+    </tr>
+</thead>
+</div>
+  <tbody id="tablee">
+
+  </tbody>
+</table>-->
+
+
+  </tbody>
+</table>
+
+  <table class="table">
+  <thead>
+    <div class="col-lg-8 col-lg-offset-2">
+     <tr>
+      <th class="col-lg-2 col-lg-offset-2">Student attendance per date</th>
+      <!--<th class="col-lg-2 col-lg-offset-2" id="subattend"></th>
+      <th class="col-lg-2 col-lg-offset-2" id="date"></th>-->
+    </tr>
+  </thead>
+    </div>
+  <tbody id="table">
+
+  </tbody>
+</table>
+
+    <!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+           <table class="table">
+  <thead>
+    <div class="col-lg-8 col-lg-offset-2">
+     <tr>
+      <th class="col-lg-2 col-lg-offset-2">index</th>
+      <th class="col-lg-2 col-lg-offset-2">First</th>
+      <th class="col-lg-2 col-lg-offset-2">Last</th>
+      <th class="col-lg-2 col-lg-offset-2">Dgrees</th>
+    </tr>
+  </thead>
+    </div>
+  <tbody>
+     <div class="row">
+    <tr>
+      <th class="col-lg-2 col-lg-offset-2">1</th>
+      <th class="col-lg-2 col-lg-offset-2">heba</td>
+      <th class="col-lg-2 col-lg-offset-2">momen</td>
+      <th class="col-lg-2 col-lg-offset-2">90</td>
+    </tr>
+      </div>
+    <div class="row">
+    <tr>
+      <th class="col-lg-2 col-lg-offset-2">2</th>
+      <th class="col-lg-2 col-lg-offset-2">gehad</td>
+      <th class="col-lg-2 col-lg-offset-2">alaa</td>
+      <th class="col-lg-2 col-lg-offset-2">100</td>
+    </tr>
+      </div>
+    <div class="row">
+    <tr>
+      <th class="col-lg-2 col-lg-offset-2">3</th>
+      <th class="col-lg-2 col-lg-offset-2">nada</td>
+      <th class="col-lg-2 col-lg-offset-2">sayed</td>
+      <th class="col-lg-2 col-lg-offset-2">100</td>
+    </tr>
+      </div>
+
+  </tbody>
+</table>
+    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+        <form>
+         <fieldset>
+            <legend>Upload Files Here</legend>
+            <label>Your Message</label>
+            <br>
+            <textarea rows="6" cols="60"></textarea>
+            <br>
+            <label>Upload Your File <input type="file" value="Browser"  <button type="button" class="btn btn-primary"></button></label>
+            <br>
+            <br>
+            <a href="file:///F:/our%20web/our%20web/web%20page%20odin%20smart%20attendence/teacher.html"><input type="submit" value="send"<button type="button" class="btn btn-primary"> </button></a>
+            <br>
+            <br>
+         </fieldset>
+       </form>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+            <!--shared files are put here-->
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+              <form>
+               <fieldset>
+                  <legend>Write the broadcast Message you want to send to your whole class</legend>
+                  <label>Your Message</label>
+                  <br>
+                  <textarea rows="6" cols="60"></textarea>
+                  <br>
+                  <a href="#"><input type="submit" value="Send"<button type="button" class="btn btn-primary"> </button></a>
+                  <br>
+                  <br>
+               </fieldset>
+             </form>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+            <h2>Project Title</h2>
+
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <!-- Project Details Go Here -->
+            <form>
+               <fieldset>
+                  <legend>Write the broadcast Message you want to send to aspecific student</legend>
+                  <label>Your Message</label>
+                  <br>
+                  <textarea rows="6" cols="60"></textarea>
+                  <br>
+                  <br>
+               </fieldset>
+             </form>
+            <div class="btn-group">
+              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h5>name of student ▼</h5>
+          </button>
+          <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">heba</a>
+                    <br>
+                    <a class="dropdown-item" href="#">nada</a>
+                    <br>
+                     <a class="dropdown-item" href="#">gehad</a>
+                    <br>
+                    <a class="dropdown-item" href="#">mariam</a>
+                    <br>
+                    <a class="dropdown-item" href="#">sofia</a>
+                    <br>
+          </div>
+          <br>
+          <br>
+          <br>
+                <a href="#"><input type="submit"  value="Send"<button type="button" class="btn btn-primary" ></button></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+  var subjectname;
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var JSONObject = JSON.parse(this.responseText);
+      document.getElementById("option 1").innerHTML =JSONObject[0];
+      document.getElementById("option 2").innerHTML =JSONObject[1];
+      document.getElementById("option 3").innerHTML =JSONObject[2];
+      document.getElementById("option 4").innerHTML =JSONObject[3];
+      document.getElementById("option 5").innerHTML =JSONObject[4];
+      document.getElementById("option 6").innerHTML =JSONObject[5];
+      document.getElementById("option 7").innerHTML =JSONObject[6];
+      document.getElementById("option 8").innerHTML =JSONObject[7];
+      document.getElementById("option 9").innerHTML =JSONObject[8];
+      document.getElementById("option 10").innerHTML =JSONObject[9];
+
+    }
+  };
+  xhttp.open("GET", 'http://localhost:8080/api/Subjects', true);
+  xhttp.send();
+}
+</script>
+<script>
+//  function sendattend() {
+//
+//              var xhttp = new XMLHttpRequest();
+//              xhttp.onreadystatechange = function() {
+//                if (this.readyState == 4 && this.status == 200) {
+//                  //document.getElementById("attendance").innerHTML = this.responseText;
+//                   var JSONObject = JSON.parse(this.responseText);
+//                  //  document.getElementById("subattend").innerHTML =JSONObject[0];
+//                   var geturl=JSONObject[3]["data"];
+//                   var temp = geturl.split(',');
+//
+//
+//
+//                   document.getElementById("subattend").innerHTML =temp[0];
+//                   document.getElementById("date").innerHTML =temp[1];
+//                  //  document.getElementById("name1").innerHTML =temp[2];
+//                  //  document.getElementById("name2").innerHTML =temp[3];
+//                  //  document.getElementById("name3").innerHTML =temp[4];
+//                  //  document.getElementById("name4").innerHTML =temp[5];
+//                  //  document.getElementById("name5").innerHTML =temp[6];
+//                   console.log(temp);
+//                   for(i=2 ; i<temp.length;i++){
+//                    document.getElementById("table").innerHTML+='<div class="row"><tr><th class="col-lg-2 col-lg-offset-2" id="name1">'+temp[i]+'</th></tr></div>'
+//
+//                   }
+//
+//                }
+//              };
+//              xhttp.open("GET", 'http://172.20.10.5:8080/api/getcollection', true);
+//              //xhttp.open("POST", 'http://172.20.10.5:8080/api/attendancebysub', true);
+//              //xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+//              //xhttp.send(JSON.stringify({ "sub": subjectname}));
+//              xhttp.send();
+//}
+
+
+  function sendattend() {
+
+              var xhttp = new XMLHttpRequest();
+              xhttp.open("POST", 'http://localhost:8080/api/attendancebysub', true);
+              xhttp.setRequestHeader("Content-type", "application/json");
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  //document.getElementById("attendance").innerHTML = this.responseText;
+                   var JSONObject = JSON.parse(this.responseText);
+                  //  document.getElementById("subattend").innerHTML =JSONObject[0];
+                   //var geturl=JSONObject[0]["data"];
+                   console.log("JSONObject.length ",JSONObject.length )
+
+                   //document.getElementById("subattend").innerHTML ="";
+                   //document.getElementById("date").innerHTML ="";
+                   document.getElementById("table").innerHTML="" //clear table 
+                  for(l=0 ; l<JSONObject.length;l++){
+                  var temp=JSONObject[l];
+                //  console.log("JSONObject",JSONObject[l])
+                  //console.log("JSONObject",JSONObject[0])
+
+                 //var temp = geturl.split(',');
+                   console.log("temp",temp)
+
+                  // for(j=0 ; j<1;j++){}
+                  // document.getElementById("tablee").innerHTML ='<div class="row"><tr><th class="col-lg-2 col-lg-offset-2" id="subattend">'+temp[j]+'</th></tr></div>'
+                  //}
+                   document.getElementById("subattend").innerHTML =temp[0];
+                   //document.getElementById("date").innerHTML =temp[1];
+
+
+
+
+                   for(i=1 ; i<temp.length;i++){
+                    //document.getElementById("subattend").innerHTML =temp[0];
+                    //document.getElementById("date").innerHTML =temp[1];
+
+                    document.getElementById("table").innerHTML+='<div class="row"><tr><th class="col-lg-2 col-lg-offset-2" id="name1">'+temp[i]+'</th></tr></div>'
+
+                   }
+                 }
+
+                }
+              };
+
+              //xhttp.open("GET", 'http://172.20.10.5:8080/api/getcollection', true);
+
+              //xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+              //xhttp.onload = requestComplete;
+              var data = JSON.stringify({"sub":subjectname});
+              xhttp.send(data);
+}
+
+
+  function subjectclick1(){
+  subjectname= document.getElementById("option 1").innerHTML;
+  };
+  function subjectclick2(){
+  subjectname= document.getElementById("option 2").innerHTML;
+  };
+  function subjectclick3(){
+  subjectname= document.getElementById("option 3").innerHTML;
+  };
+  function subjectclick4(){
+  subjectname= document.getElementById("option 4").innerHTML;
+  };
+  function subjectclick5(){
+  subjectname= document.getElementById("option 5").innerHTML;
+  };
+  function subjectclick6(){
+  subjectname= document.getElementById("option 6").innerHTML;
+  };
+  function subjectclick7(){
+  subjectname= document.getElementById("option 7").innerHTML;
+  };
+  function subjectclick8(){
+  subjectname= document.getElementById("option 8").innerHTML;
+  };
+  function subjectclick9(){
+  subjectname= document.getElementById("option 9").innerHTML;
+  };
+  function subjectclick10(){
+  subjectname= document.getElementById("option 10").innerHTML;
+  };
+
+
+
+</script>
+<script>
+
+
+
+ //function tester() {
+ //             var xhttp = new XMLHttpRequest();
+ //            xhttp.onreadystatechange = function() {
+ //               if (this.readyState == 4 && this.status == 200) {
+ //                  //document.getElementById("option 1").innerHTML
+ //                 //subjectname= document.getElementById("option 1").innerHTML;
+ //                 var zeft=subjectclick();
+ //                 alert(zeft);
+ //               }
+ //             };
+ //             xhttp.open("POST", 'http://172.20.10.5:8080/api/attendancebysub', true);
+ //             xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+ //             xmlhttp.send(JSON.stringify({ "sub": "hello@user.com"}));
+ //             //xhttp.send();
+ //             //console.log(zeft);
+ //}
+</script>
+<!--<script>
+  $.post('http://172.20.10.5:8080/api/attendancebysub',)
+</script>-->
+
+
+</body>
+</html>

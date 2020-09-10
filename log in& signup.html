@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Login &amp; Register </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/form-elements.css">
+        <link rel="stylesheet" href="css/style log in.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+          <script>
+			$(document).ready(function(){
+              console.log("document ready");
+              $("button[id='login']").click(function(e){
+                e.preventDefault()
+                console.log("submit data");
+
+        var username = $("#username").val();
+				var password = $("#password2").val();
+
+				if (username == '' ||password  == '' ) {
+				alert("Please fill all fields...!!!!!!");
+				}
+				 else {
+alert('go ajax')
+				$.post("http://localhost:8080/api/login", {
+				username1: username,
+				password1: password,
+      	}
+      , function(data) {
+            if (data.status==200 || data.status=='200') {
+            storeValues(document.myForm)
+              window.location="studentpageback1.html";
+            }
+              else if (data.status==201 || data.status=='201') {
+                storeValues(document.myForm)
+                window.location="teachermariam.html";
+              }
+                else if (data.status==401 || data.status=='401'){
+                 alert(data.message)
+
+                }
+				}
+      );
+				}
+				});
+				});
+
+			$(document).ready(function(){
+              console.log("document ready");
+              $("button[id='signup']").click(function(e){
+                e.preventDefault()
+                console.log("submit data");
+
+               var username = $("#name").val();
+			    var password = $("#password1").val();
+				var id = $("#id").val();
+				var department = $("#department").val();
+				var class1 = $("#class").val();
+                var email = $("#email").val();
+				if (username == '' ||id  == '' ||password  == '') {
+				alert("Please fill all fields...!!!!!!");
+				} else if ((id.length) < 8) {
+				alert("id should atleast 8 character in length...!!!!!!");
+				}
+				 else {
+				 alert("Student Name: " + name + "\nStudent ID: " + id +  "\nDepartment: " + department +  "\nClass: " + class1 +"\nE-mail" + email );
+
+				$.post("http://localhost:8080/api/signup", {
+				username1: username,
+				password1: password,
+        email1: email,
+				id1: id,
+
+				}, function(data) {
+
+				if (data == 'ok') {
+          alert('Sign up successful. login please!')
+				      $("input").val('');
+				}
+				alert(data);
+				}
+      );
+
+				}
+				});
+				});
+        </script>
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+
+        <div class="top-content" style="background: #ffc107;">
+
+            <div class="inner-bg">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Odian Smart Attendence</strong> Login &amp; Register Forms</h1>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter username and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-lock"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" name="myForm" action="" method="post"  onsubmit="return storeValues(this);" class="login-form">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-username">Field 1</label>
+				                        	<input type="text/javascript" name="field1" placeholder="Username..." value="" class="form-username form-control" id="username">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password2">
+				                        </div>
+				                        <button type="submit" class="btn" id="login">Sign in!</button>
+				                    </form>
+			                    </div>
+		                    </div>
+
+
+
+                        </div>
+
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-sm-5">
+
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="registration-form">
+				                    	<div class="form-group">
+				                    		<label style="color:aliceblue">Username :</label>
+				                        	<input type="text" name="form-first-name" placeholder="Username..." id="name" >
+				                        </div>
+										 <div class="form-group">
+				                        	<label style="color:aliceblue">Password :</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="password1">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label style="color:aliceblue"> ID :</label>
+				                        	<input type="text" name="Student ID" placeholder="Student ID..." id="id" >
+				                        </div>
+
+                                        <div class="form-group">
+				                        	<label style="color:aliceblue"> E-mail :</label>
+				                        	<input type="email" name="E-mail" placeholder="E-mail..." id="email" >
+				                        </div>
+
+				                        <div class="select form-group">
+											<label style="color:aliceblue">Department :</label>
+											<select id="department">
+												<option>Electrical Engineering Department</option>
+												<option>Civil Engineering Department</option>
+
+											</select>
+				                        </div>
+				                        <div class="select form-group">
+											<label style="color:aliceblue">class :</label>
+											<select id="class">
+												<option>0</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+				                        </div>
+
+				                        <button type="submit" class="btn" id="signup">Sign me up!</button>
+				                    </form>
+			                    </div>
+                        	</div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Javascript -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">function getCookie(name){var re=new RegExp(name+"=([^;]+)");var value=re.exec(document.cookie);
+        return(value!=null)?unescape(value[1]):null;}var today=new Date();
+        var expiry=new Date(today.getTime()+30*24*3600*1000);var expired=new Date(today.getTime()-24*3600*1000);
+        function setCookie(name,value){document.cookie=name+"="+escape(value)+"; path=/; expires="+expiry.toGMTString();}
+        function deleteCookie(name){document.cookie=name+"=null; path=/; expires="+expired.toGMTString();}
+        function storeValues(form){
+
+              setCookie("field1",form.field1.value);
+              // setCookie("field2",form.field2.value);
+              // setCookie("field3",form.field3.value);
+              // setCookie("field4",form.field4.value);
+              return true;
+      }
+    </script>
+        <script type="text/javascript">if(field1=getCookie("field1"))document.myForm.field1.value=field1;function clearCookies(){deleteCookie("field1");alert('Your cookies have been deleted!');}</script>
+
+
+        <!--[if lt IE 10]>
+            <script src="js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
